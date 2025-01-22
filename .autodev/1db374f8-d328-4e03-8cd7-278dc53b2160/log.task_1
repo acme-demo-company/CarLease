@@ -1,0 +1,459 @@
+2025-01-12T18:18:17.804Z [INFO] RUNNING: Task 1: Upgrade Java project to Java 21 along with Spring Boot.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.carleaseapi.ws:CarLeaseAPI >-------------------
+[INFO] Building CarLeaseAPI 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.2.0:tree (default-cli) @ CarLeaseAPI ---
+[INFO] com.carleaseapi.ws:CarLeaseAPI:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.6.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.6.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.6.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.6.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.6.4:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.10:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.10:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.1:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.1:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.29:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.6.4:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.1:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.1:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.6.4:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.58:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.58:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.58:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.3.16:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.3.16:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.3.16:compile
+[INFO] |     +- org.springframework:spring-context:jar:5.3.16:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.3.16:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:2.6.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-aop:jar:2.6.4:compile
+[INFO] |  |  \- org.aspectj:aspectjweaver:jar:1.9.7:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:2.6.4:compile
+[INFO] |  |  +- com.zaxxer:HikariCP:jar:4.0.3:compile
+[INFO] |  |  \- org.springframework:spring-jdbc:jar:5.3.16:compile
+[INFO] |  +- jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile
+[INFO] |  +- jakarta.persistence:jakarta.persistence-api:jar:2.2.3:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:5.6.5.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.11.22:compile
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- org.jboss:jandex:jar:2.4.2.Final:compile
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.5.1:compile
+[INFO] |  |  +- org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final:compile
+[INFO] |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.6:compile
+[INFO] |  |     +- org.glassfish.jaxb:txw2:jar:2.3.6:compile
+[INFO] |  |     +- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  |     \- com.sun.activation:jakarta.activation:jar:1.2.2:runtime
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:2.6.2:compile
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:2.6.2:compile
+[INFO] |  |  +- org.springframework:spring-orm:jar:5.3.16:compile
+[INFO] |  |  +- org.springframework:spring-tx:jar:5.3.16:compile
+[INFO] |  |  \- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:5.3.16:compile
+[INFO] +- com.h2database:h2:jar:1.4.200:runtime
+[INFO] +- org.springframework.boot:spring-boot-starter-security:jar:2.6.4:compile
+[INFO] |  +- org.springframework:spring-aop:jar:5.3.16:compile
+[INFO] |  +- org.springframework.security:spring-security-config:jar:5.6.2:compile
+[INFO] |  |  \- org.springframework.security:spring-security-core:jar:5.6.2:compile
+[INFO] |  |     \- org.springframework.security:spring-security-crypto:jar:5.6.2:compile
+[INFO] |  \- org.springframework.security:spring-security-web:jar:5.6.2:compile
+[INFO] +- io.jsonwebtoken:jjwt:jar:0.9.0:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-databind:jar:2.13.1:compile
+[INFO] |     +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.1:compile
+[INFO] |     \- com.fasterxml.jackson.core:jackson-core:jar:2.13.1:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.6.4:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.6.4:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.6.4:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.6.0:test
+[INFO]    |  \- net.minidev:json-smart:jar:2.4.8:test
+[INFO]    |     \- net.minidev:accessors-smart:jar:2.4.8:test
+[INFO]    |        \- org.ow2.asm:asm:jar:9.1:test
+[INFO]    +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO]    |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO]    +- org.assertj:assertj-core:jar:3.21.0:test
+[INFO]    +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO]    +- org.junit.jupiter:junit-jupiter:jar:5.8.2:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test
+[INFO]    |  |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+[INFO]    |  |  +- org.junit.platform:junit-platform-commons:jar:1.8.2:test
+[INFO]    |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-params:jar:5.8.2:test
+[INFO]    |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.8.2:test
+[INFO]    |     \- org.junit.platform:junit-platform-engine:jar:1.8.2:test
+[INFO]    +- org.mockito:mockito-core:jar:4.0.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.11.22:test
+[INFO]    |  \- org.objenesis:objenesis:jar:3.2:test
+[INFO]    +- org.mockito:mockito-junit-jupiter:jar:4.0.0:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.3.16:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.3.16:compile
+[INFO]    +- org.springframework:spring-test:jar:5.3.16:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.8.4:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.336 s
+[INFO] Finished at: 2025-01-12T23:48:33+05:30
+[INFO] ------------------------------------------------------------------------
+2025-01-12T18:18:33.996Z [INFO] 
+2025-01-12T18:18:33.998Z [INFO] c:\Users\mjadhav2\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin\mvn process closed with code 0 and signal null
+2025-01-12T18:18:34.005Z [INFO] Validating build before running OpenRewrite.
+2025-01-12T18:18:51.787Z [INFO] Build successful, continuing with OpenRewrite
+2025-01-12T18:18:52.540Z [INFO] Applying OpenRewrite recipes:
+[
+  {
+    "id": "org.openrewrite.java.migrate.UpgradeToJava21",
+    "groupId": "org.openrewrite.recipe",
+    "artifactId": "rewrite-migrate-java",
+    "description": "Migrate Java 8 to Java 21.",
+    "version": "2.25.0",
+    "target": [
+      "21"
+    ],
+    "url": "https://docs.openrewrite.org/recipes/java/migrate/UpgradeToJava21"
+  },
+  {
+    "id": "org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7",
+    "groupId": "org.openrewrite.recipe",
+    "artifactId": "rewrite-spring",
+    "description": "Migrate low-level to Spring Boot 2.7 directly.",
+    "version": "5.19.0",
+    "target": [
+      "11",
+      "17",
+      "21"
+    ],
+    "dependencyGroups": [
+      "org.springframework.boot"
+    ],
+    "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7"
+  }
+]
+2025-01-12T18:21:34.608Z [INFO] OpenRewrite completed successfully.
+[INFO] Scanning for projects...
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom (5.3 kB at 2.9 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom (9.9 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/35/maven-parent-35.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/35/maven-parent-35.pom (45 kB at 281 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/25/apache-25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/25/apache-25.pom (21 kB at 99 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.3.0/build-helper-maven-plugin-3.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.3.0/build-helper-maven-plugin-3.3.0.pom (7.4 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/65/mojo-parent-65.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/65/mojo-parent-65.pom (35 kB at 343 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.8.1/junit-bom-5.8.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.8.1/junit-bom-5.8.1.pom (5.6 kB at 101 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.3.0/build-helper-maven-plugin-3.3.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.3.0/build-helper-maven-plugin-3.3.0.jar (68 kB at 743 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/8.5.13/flyway-maven-plugin-8.5.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/8.5.13/flyway-maven-plugin-8.5.13.pom (4.7 kB at 21 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/8.5.13/flyway-parent-8.5.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/8.5.13/flyway-parent-8.5.13.pom (31 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/8.5.13/flyway-maven-plugin-8.5.13.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/8.5.13/flyway-maven-plugin-8.5.13.jar (130 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/johnzon/johnzon-maven-plugin/1.2.21/johnzon-maven-plugin-1.2.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/johnzon/johnzon-maven-plugin/1.2.21/johnzon-maven-plugin-1.2.21.pom (4.7 kB at 29 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/johnzon/johnzon/1.2.21/johnzon-1.2.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/johnzon/johnzon/1.2.21/johnzon-1.2.21.pom (31 kB at 261 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/27/apache-27.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/27/apache-27.pom (20 kB at 180 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/johnzon/johnzon-maven-plugin/1.2.21/johnzon-maven-plugin-1.2.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/johnzon/johnzon-maven-plugin/1.2.21/johnzon-maven-plugin-1.2.21.jar (35 kB at 682 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.14.16/jooq-codegen-maven-3.14.16.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.14.16/jooq-codegen-maven-3.14.16.pom (4.1 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-parent/3.14.16/jooq-parent-3.14.16.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-parent/3.14.16/jooq-parent-3.14.16.pom (28 kB at 442 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.14.16/jooq-codegen-maven-3.14.16.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.14.16/jooq-codegen-maven-3.14.16.jar (17 kB at 291 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.6.21/kotlin-maven-plugin-1.6.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.6.21/kotlin-maven-plugin-1.6.21.pom (5.9 kB at 110 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project/1.6.21/kotlin-project-1.6.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project/1.6.21/kotlin-project-1.6.21.pom (10 kB at 132 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.6.21/kotlin-maven-plugin-1.6.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.6.21/kotlin-maven-plugin-1.6.21.jar (80 kB at 702 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.9.1/liquibase-maven-plugin-4.9.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.9.1/liquibase-maven-plugin-4.9.1.pom (2.7 kB at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.9.1/liquibase-maven-plugin-4.9.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.9.1/liquibase-maven-plugin-4.9.1.jar (108 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.3.0/maven-dependency-plugin-3.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.3.0/maven-dependency-plugin-3.3.0.pom (16 kB at 143 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.3.0/maven-dependency-plugin-3.3.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.3.0/maven-dependency-plugin-3.3.0.jar (187 kB at 2.0 MB/s)
+[INFO] 
+[INFO] -------------------< com.carleaseapi.ws:CarLeaseAPI >-------------------
+[INFO] Building CarLeaseAPI 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.3.0:tree (default-cli) @ CarLeaseAPI ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/3.1.0/maven-reporting-impl-3.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/3.1.0/maven-reporting-impl-3.1.0.pom (7.2 kB at 70 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.1.0/maven-reporting-api-3.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.1.0/maven-reporting-api-3.1.0.pom (3.8 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.11.1/doxia-sink-api-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.11.1/doxia-sink-api-1.11.1.pom (1.6 kB at 28 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.11.1/doxia-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.11.1/doxia-1.11.1.pom (18 kB at 179 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.11.1/doxia-logging-api-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.11.1/doxia-logging-api-1.11.1.pom (1.6 kB at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.1/plexus-component-annotations-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.1/plexus-component-annotations-2.1.1.pom (770 B at 11 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/2.1.1/plexus-containers-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/2.1.1/plexus-containers-2.1.1.pom (6.0 kB at 74 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/6.5/plexus-6.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/6.5/plexus-6.5.pom (26 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.0/plexus-container-default-2.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.0/plexus-container-default-2.1.0.pom (3.0 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/2.1.0/plexus-containers-2.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/2.1.0/plexus-containers-2.1.0.pom (4.8 kB at 84 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.pom (7.9 kB at 134 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.11.1/doxia-decoration-model-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.11.1/doxia-decoration-model-1.11.1.pom (3.4 kB at 52 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.11.1/doxia-sitetools-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.11.1/doxia-sitetools-1.11.1.pom (14 kB at 151 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.11.1/doxia-core-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.11.1/doxia-core-1.11.1.pom (4.5 kB at 82 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom (14 kB at 238 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom (73 kB at 778 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom (28 kB at 278 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.pom (6.6 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.13/httpcomponents-client-4.5.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.13/httpcomponents-client-4.5.13.pom (16 kB at 264 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.pom (5.0 kB at 84 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.13/httpcomponents-core-4.4.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.13/httpcomponents-core-4.4.13.pom (13 kB at 248 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.pom (5.0 kB at 101 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14.pom (13 kB at 231 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.11.1/doxia-site-renderer-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.11.1/doxia-site-renderer-1.11.1.pom (7.7 kB at 133 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.11.1/doxia-skin-model-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.11.1/doxia-skin-model-1.11.1.pom (3.0 kB at 69 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml/1.11.1/doxia-module-xhtml-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml/1.11.1/doxia-module-xhtml-1.11.1.pom (2.0 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-modules/1.11.1/doxia-modules-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-modules/1.11.1/doxia-modules-1.11.1.pom (2.7 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/1.11.1/doxia-module-xhtml5-1.11.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/1.11.1/doxia-module-xhtml5-1.11.1.pom (2.0 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.12.0/maven-dependency-analyzer-1.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.12.0/maven-dependency-analyzer-1.12.0.pom (7.2 kB at 143 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.1.0/maven-dependency-tree-3.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.1.0/maven-dependency-tree-3.1.0.pom (6.9 kB at 114 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0.5/maven-core-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0.5/maven-core-3.0.5.pom (5.5 kB at 107 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0.5/maven-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0.5/maven-3.0.5.pom (22 kB at 367 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0.5/maven-model-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0.5/maven-model-3.0.5.pom (3.8 kB at 63 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0.5/maven-settings-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0.5/maven-settings-3.0.5.pom (1.8 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0.5/maven-settings-builder-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0.5/maven-settings-builder-3.0.5.pom (2.3 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0.5/maven-repository-metadata-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0.5/maven-repository-metadata-3.0.5.pom (1.9 kB at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0.5/maven-artifact-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0.5/maven-artifact-3.0.5.pom (1.6 kB at 26 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0.5/maven-plugin-api-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0.5/maven-plugin-api-3.0.5.pom (2.7 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/2.3.0/sisu-inject-plexus-2.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/2.3.0/sisu-inject-plexus-2.3.0.pom (6.1 kB at 120 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/2.3.0/guice-plexus-2.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/2.3.0/guice-plexus-2.3.0.pom (3.8 kB at 76 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/2.3.0/guice-bean-2.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/2.3.0/guice-bean-2.3.0.pom (3.0 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/containers/2.3.0/containers-2.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/containers/2.3.0/containers-2.3.0.pom (1.2 kB at 24 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/2.3.0/sisu-inject-2.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/2.3.0/sisu-inject-2.3.0.pom (3.2 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/2.3.0/sisu-parent-2.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/2.3.0/sisu-parent-2.3.0.pom (11 kB at 200 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.pom (7.1 kB at 129 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guava/0.9.9/sisu-guava-0.9.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guava/0.9.9/sisu-guava-0.9.9.pom (1.1 kB at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guava-parent/0.9.9/guava-parent-0.9.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guava-parent/0.9.9/guava-parent-0.9.9.pom (11 kB at 183 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0.5/maven-model-builder-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0.5/maven-model-builder-3.0.5.pom (2.5 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0.5/maven-aether-provider-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0.5/maven-aether-provider-3.0.5.pom (2.8 kB at 72 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.13.1/aether-api-1.13.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.13.1/aether-api-1.13.1.pom (1.4 kB at 36 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether/1.13.1/aether-1.13.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether/1.13.1/aether-1.13.1.pom (10 kB at 241 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.13.1/aether-spi-1.13.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.13.1/aether-spi-1.13.1.pom (1.4 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.13.1/aether-util-1.13.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.13.1/aether-util-1.13.1.pom (1.7 kB at 22 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.13.1/aether-impl-1.13.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.13.1/aether-impl-1.13.1.pom (2.5 kB at 73 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.1.0/aether-util-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.1.0/aether-util-1.1.0.pom (2.1 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.1.0/aether-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.1.0/aether-1.1.0.pom (26 kB at 516 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom (31 kB at 713 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/3.1.0/maven-reporting-impl-3.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/3.1.0/maven-reporting-impl-3.1.0.jar (19 kB at 505 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.1.0/maven-reporting-api-3.1.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.11.1/doxia-sink-api-1.11.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.11.1/doxia-logging-api-1.11.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.11.1/doxia-decoration-model-1.11.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.1.0/maven-reporting-api-3.1.0.jar (11 kB at 158 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.11.1/doxia-core-1.11.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.11.1/doxia-decoration-model-1.11.1.jar (60 kB at 695 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.0/plexus-container-default-2.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.11.1/doxia-core-1.11.1.jar (218 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.11.1/doxia-logging-api-1.11.1.jar (12 kB at 66 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.11.1/doxia-sink-api-1.11.1.jar (12 kB at 64 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar (61 kB at 251 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.11.1/doxia-site-renderer-1.11.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar (183 kB at 744 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.11.1/doxia-skin-model-1.11.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.11.1/doxia-site-renderer-1.11.1.jar (65 kB at 217 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar (328 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml/1.11.1/doxia-module-xhtml-1.11.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/1.11.1/doxia-module-xhtml5-1.11.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.11.1/doxia-skin-model-1.11.1.jar (16 kB at 52 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.0/plexus-container-default-2.1.0.jar (230 kB at 661 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.12.0/maven-dependency-analyzer-1.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml/1.11.1/doxia-module-xhtml-1.11.1.jar (17 kB at 49 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.1/plexus-component-annotations-2.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/1.11.1/doxia-module-xhtml5-1.11.1.jar (18 kB at 49 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.5/maven-model-2.0.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.1/plexus-component-annotations-2.1.1.jar (4.1 kB at 10 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.12.0/maven-dependency-analyzer-1.12.0.jar (37 kB at 89 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.1.0/maven-dependency-tree-3.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.5/maven-model-2.0.5.jar (86 kB at 207 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.1.0/aether-util-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar (327 kB at 764 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar (780 kB at 1.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.jar (85 kB at 183 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.1.0/maven-dependency-tree-3.1.0.jar (103 kB at 212 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.1.0/aether-util-1.1.0.jar (150 kB at 306 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar (587 kB at 1.1 MB/s)
+[INFO] com.carleaseapi.ws:CarLeaseAPI:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.7.18:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.7.18:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.7.18:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.7.18:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.7.18:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.12:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.12:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.30:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.7.18:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.5:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.7.18:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.83:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.83:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.83:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.3.31:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.3.31:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.3.31:compile
+[INFO] |     +- org.springframework:spring-context:jar:5.3.31:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.3.31:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:2.7.18:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-aop:jar:2.7.18:compile
+[INFO] |  |  \- org.aspectj:aspectjweaver:jar:1.9.7:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:2.7.18:compile
+[INFO] |  |  +- com.zaxxer:HikariCP:jar:4.0.3:compile
+[INFO] |  |  \- org.springframework:spring-jdbc:jar:5.3.31:compile
+[INFO] |  +- jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile
+[INFO] |  +- jakarta.persistence:jakarta.persistence-api:jar:2.2.3:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:5.6.15.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.12.23:compile
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- org.jboss:jandex:jar:2.4.2.Final:compile
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.5.1:compile
+[INFO] |  |  +- org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final:compile
+[INFO] |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.9:compile
+[INFO] |  |     +- org.glassfish.jaxb:txw2:jar:2.3.9:compile
+[INFO] |  |     +- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  |     \- com.sun.activation:jakarta.activation:jar:1.2.2:runtime
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:2.7.18:compile
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:2.7.18:compile
+[INFO] |  |  +- org.springframework:spring-orm:jar:5.3.31:compile
+[INFO] |  |  +- org.springframework:spring-tx:jar:5.3.31:compile
+[INFO] |  |  \- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:5.3.31:compile
+[INFO] +- com.h2database:h2:jar:2.1.214:runtime
+[INFO] +- org.springframework.boot:spring-boot-starter-security:jar:2.7.18:compile
+[INFO] |  +- org.springframework:spring-aop:jar:5.3.31:compile
+[INFO] |  +- org.springframework.security:spring-security-config:jar:5.7.11:compile
+[INFO] |  |  \- org.springframework.security:spring-security-core:jar:5.7.11:compile
+[INFO] |  |     \- org.springframework.security:spring-security-crypto:jar:5.7.11:compile
+[INFO] |  \- org.springframework.security:spring-security-web:jar:5.7.11:compile
+[INFO] +- io.jsonwebtoken:jjwt:jar:0.9.0:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] |     +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |     \- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.7.18:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.7.18:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.7.18:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.7.0:test
+[INFO]    |  \- net.minidev:json-smart:jar:2.4.11:test
+[INFO]    |     \- net.minidev:accessors-smart:jar:2.4.11:test
+[INFO]    |        \- org.ow2.asm:asm:jar:9.3:test
+[INFO]    +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO]    |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO]    +- org.assertj:assertj-core:jar:3.22.0:test
+[INFO]    +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO]    +- org.junit.jupiter:junit-jupiter:jar:5.8.2:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test
+[INFO]    |  |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+[INFO]    |  |  +- org.junit.platform:junit-platform-commons:jar:1.8.2:test
+[INFO]    |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-params:jar:5.8.2:test
+[INFO]    |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.8.2:test
+[INFO]    |     \- org.junit.platform:junit-platform-engine:jar:1.8.2:test
+[INFO]    +- org.mockito:mockito-core:jar:4.5.1:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.12.23:test
+[INFO]    |  \- org.objenesis:objenesis:jar:3.2:test
+[INFO]    +- org.mockito:mockito-junit-jupiter:jar:4.5.1:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.1:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.3.31:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.3.31:compile
+[INFO]    +- org.springframework:spring-test:jar:5.3.31:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.9.1:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.555 s
+[INFO] Finished at: 2025-01-12T23:52:18+05:30
+[INFO] ------------------------------------------------------------------------
+2025-01-12T18:22:18.196Z [INFO] 
+2025-01-12T18:22:18.198Z [INFO] c:\Users\mjadhav2\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin\mvn process closed with code 0 and signal null
+2025-01-12T18:22:18.327Z [INFO] SUCCEEDED: Task 1: Upgrade Java project to Java 21 along with Spring Boot.
